@@ -1,0 +1,193 @@
+.feature {
+    margin-top: 160px;
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 210px 130px;
+    }
+
+    &__heading,
+    &__desc {
+        width: 470px;
+    }
+
+    &__list {
+        margin-top: 28px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #212832;
+        font-family: "Open Sans";
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 166.667%;
+
+        & + & {
+            margin-top: 18px;
+        }
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: #7264d6;
+            border-radius: 50%;
+        }
+    }
+
+    &__cta {
+        --height: 58px;
+        margin-top: 38px;
+        min-width: 149px;
+    }
+
+    &-card {
+        position: relative;
+        width: 482px;
+        height: 322px;
+        padding: 38px;
+        border-radius: 20px;
+        background: #8476e3;
+
+        &__main-balance {
+            color: #fff;
+            font-family: "Open Sans";
+            font-size: 2.4rem;
+        }
+
+        &__money {
+            margin-top: 10px;
+            color: #fff;
+            font-family: "Open Sans";
+            font-size: 3.2rem;
+
+            font-weight: 700;
+        }
+
+        &__author {
+            display: flex;
+            align-items: center;
+            gap: 26px;
+            margin-top: 98px;
+        }
+
+        &__info {
+            color: #fff;
+            font-family: "Open Sans";
+            font-size: 2rem;
+        }
+
+        &__name {
+            color: #fff;
+            font-family: "Open Sans";
+            font-size: 2.2rem;
+
+            font-weight: 600;
+        }
+
+        &__expired {
+            margin-top: 4px;
+            display: flex;
+            align-items: center;
+            gap: 80px;
+        }
+
+        &__time {
+            color: #fff;
+            font-family: "Open Sans";
+            font-size: 2.2rem;
+
+            font-weight: 600;
+        }
+
+        &__main {
+            color: #fff;
+            font-family: "Open Sans";
+            font-size: 2rem;
+        }
+
+        &__logo {
+            position: absolute;
+            top: 38px;
+            right: 38px;
+        }
+
+        &__decor {
+            position: absolute;
+            top: 0;
+            left: 0;
+            &--2 {
+                position: absolute;
+                z-index: -0;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+
+    &__media {
+        position: relative;
+        width: 470px;
+
+        &::after {
+            content: url(../../assets/img/icon/retangle.svg);
+            position: absolute;
+            inset: auto 0 0 0;
+        }
+    }
+
+    &__img {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+    }
+
+    &-payment {
+        position: absolute;
+        z-index: 1;
+        bottom: 57px;
+        right: -74px;
+        padding: 28px;
+        width: 281px;
+        height: 220px;
+        border-radius: 4px;
+        background: #fff;
+        fill: #fff;
+        filter: drop-shadow(0px 44px 48px rgba(0, 0, 0, 0.1));
+
+        &__title {
+            color: #212832;
+            font-family: "Open Sans";
+            font-size: 1.8rem;
+
+            font-weight: 600;
+            line-height: 166.667%;
+        }
+
+        &__list {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 63px;
+            height: 48px;
+            border-radius: 4px;
+            background: #f2f2fa;
+
+            &:last-child{
+                background: #F9EA63;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.btn {
+    --height: 52px;
+    padding: 0;
+    display: inline-block;
+    min-width: 113px;
+    height: var(--height);
+    line-height: var(--height);
+    border-radius: 6px;
+    background: #212832;
+    text-align: center;
+
+    color: #fff;
+
+    font-family: "Open Sans";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+
+    &:hover {
+        background: #7264d6;
+    }
+}

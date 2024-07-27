@@ -1,0 +1,27 @@
+.feedback {
+    margin-top: 160px;
+
+    &__label,
+    &__heading,
+    &__desc {
+        text-align: center;
+    }
+
+    &__label {
+        display: block;
+    }
+
+    &__desc {
+        display: block;
+        margin: 0 auto;
+        width: 435px;
+    }
+    &__inner{
+        margin-top: 70px;
+    }
+    &__quote {
+        width: 570px;
+        height: 300px;
+        flex-shrink: 0;
+    }
+}

@@ -1,0 +1,59 @@
+.footer {
+    margin-top: 100px;
+    background: #fafbff;
+
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__title {
+        color: #212832;
+        font-family: "Open Sans";
+        font-size: 1.8rem;
+
+        font-weight: 600;
+        line-height: 166.667%;
+    }
+
+    &__list {
+        margin-top: 24px;
+    }
+
+    &__item,
+    &__address {
+        margin: 4px 0;
+        color: #6a6e78;
+        font-family: "Open Sans";
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 166.667%;
+    }
+
+    &__address {
+        margin-top: 24px;
+    }
+
+    &__title ~ &__title {
+        margin-top: 48px;
+    }
+
+    &__form {
+        height: 52px;
+    }
+
+    &__copyright {
+        background: #7264d6;
+    }
+
+    &__desc {
+        color: #fff;
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 175% ;
+    }
+}

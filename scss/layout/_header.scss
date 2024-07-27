@@ -1,0 +1,49 @@
+.header {
+    // position: sticky;
+    // inset: 0 0 auto 0;
+    &__inner {
+        display: flex;
+
+        align-items: center;
+        padding: 42px  0;
+    }
+
+    &__log {
+        margin-right: 28px;
+        color: #212832;
+
+        font-family: "Open Sans";
+        font-size: 1.6rem;
+
+        font-weight: 600;
+        line-height: 175%;
+    }
+
+    &__sign {
+        color: #fff;
+        font-family: "Open Sans";
+        font-size: 1.6rem;
+
+        font-weight: 600;
+      
+    }
+}
+
+.nav {
+    margin: 0 auto 0 74px;
+
+    &__list {
+        display: flex;
+        gap: 48px;
+    }
+
+    &__item {
+        color: #212832;
+
+        font-family: "Open Sans";
+        font-size: 1.6rem;
+
+        font-weight: 600;
+        line-height: 175%;
+    }
+}
